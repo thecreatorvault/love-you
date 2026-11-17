@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Srabani, I Love You 💖</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg1:#1a0010;--bg2:#4a0230;--pink:#ff4d8d;--soft:#ffd1e3;--card:rgba(255,255,255,.08)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,sans-serif;color:#fff;background:radial-gradient(circle at 50% 0,var(--bg2),var(--bg1) 70%) fixed;min-height:100vh;overflow-x:hidden}
+#rain{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.fl{position:absolute;bottom:-40px;animation:up linear forwards;opacity:.8}
+@keyframes up{to{transform:translateY(-110vh) rotate(40deg);opacity:0}}
+#entry{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;background:radial-gradient(circle,var(--bg2),#0d0008);transition:opacity 1s,transform 1s}
+#entry.go{opacity:0;transform:scale(1.6);pointer-events:none}
+.bigheart{font-size:110px;animation:beat 1.1s infinite;filter:drop-shadow(0 0 30px var(--pink))}
+@keyframes beat{0%,100%{transform:scale(1)}20%{transform:scale(1.2)}40%{transform:scale(1)}60%{transform:scale(1.15)}}
+#entry h1{font-size:1.7rem;margin:18px 0 6px}
+#entry p{color:var(--soft);margin-bottom:26px}
+.btn{border:0;cursor:pointer;font-size:1.1rem;font-weight:700;color:#fff;padding:14px 30px;border-radius:50px;background:linear-gradient(135deg,#ff4d8d,#ff2d6f);box-shadow:0 0 25px rgba(255,77,141,.6);transition:transform .2s}
+.btn:active{transform:scale(.93)}
+main{position:relative;z-index:2;max-width:760px;margin:auto;padding:30px 18px 80px}
+section{margin-bottom:60px;text-align:center}
+.hero{min-height:80vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.hero h2{font-size:clamp(2rem,9vw,3.6rem);line-height:1.25;background:linear-gradient(90deg,#ffd1e3,#ff4d8d,#ffb347,#ff4d8d);background-size:300%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite;min-height:3.2em}
+@keyframes shine{to{background-position:300% 0}}
+.hero .emo{font-size:2.4rem;margin-top:14px;animation:beat 1.4s infinite}
+.hero small{margin-top:30px;color:var(--soft);opacity:.8;animation:bob 1.6s infinite}
+@keyframes bob{50%{transform:translateY(8px)}}
+h3{font-size:1.5rem;margin-bottom:6px;color:var(--soft)}
+.sub{color:#ffffffaa;margin-bottom:22px;font-size:.95rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.flip{height:150px;perspective:700px;cursor:pointer}
+.flip div{position:relative;width:100%;height:100%;transition:transform .7s;transform-style:preserve-3d}
+.flip.on div{transform:rotateY(180deg)}
+.flip span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:12px;border-radius:18px;backface-visibility:hidden;-webkit-backface-visibility:hidden;font-size:.95rem;border:1px solid #ffffff22}
+.f{background:var(--card);font-size:2.6rem!important;backdrop-filter:blur(6px)}
+.b{background:linear-gradient(135deg,#ff4d8d,#b3125e);transform:rotateY(180deg);font-weight:600}
+.letter{background:var(--card);border:1px solid #ffffff22;border-radius:22px;padding:24px;text-align:left;line-height:1.8;min-height:240px;backdrop-filter:blur(6px);white-space:pre-wrap}
+.counter{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.counter div{background:var(--card);border-radius:16px;padding:14px 16px;min-width:76px}
+.counter b{display:block;font-size:1.6rem;color:var(--pink)}
+
+#no{position:absolute;background:#ffffff22;box-shadow:none}
+#yes{font-size:1.3rem}
+#ans{font-size:1.2rem;margin-top:16px;min-height:3em}
+.sign{color:var(--soft);font-size:1.1rem}
+.pop{position:fixed;z-index:60;pointer-events:none;animation:pop 1.6s ease-out forwards}
+@keyframes pop{to{transform:translate(var(--x),var(--y)) rotate(360deg) scale(.4);opacity:0}}
+#stars{position:fixed;inset:0;z-index:0;pointer-events:none}
+.st{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;animation:tw 3s infinite}
+@keyframes tw{50%{opacity:.15;transform:scale(.5)}}
+.shoot{position:absolute;width:120px;height:2px;background:linear-gradient(90deg,#fff,transparent);transform:rotate(-30deg);animation:sh 1.3s ease-out forwards}
+@keyframes sh{from{opacity:1;transform:translate(0,0) rotate(-30deg)}to{opacity:0;transform:translate(-420px,240px) rotate(-30deg)}}
+.trail{position:fixed;z-index:70;pointer-events:none;font-size:16px;animation:tr .9s forwards}
+@keyframes tr{to{transform:translateY(-40px) scale(.3);opacity:0}}
+#music{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));right:12px;z-index:40;width:46px;height:46px;border-radius:50%;border:0;font-size:1.3rem;background:var(--card);color:#fff;backdrop-filter:blur(6px);cursor:pointer}
+.bar{height:22px;border-radius:20px;background:#ffffff22;overflow:hidden;margin:16px auto;max-width:420px}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ff4d8d,#ffb347);transition:width .05s}
+#hold{touch-action:none;user-select:none;-webkit-user-select:none}
+#arena{position:relative;height:280px;border-radius:22px;background:var(--card);border:1px solid #ffffff22;overflow:hidden;touch-action:manipulation}
+.fh{position:absolute;top:-40px;font-size:2.2rem;cursor:pointer;animation:fall 3.4s linear forwards}
+@keyframes fall{to{transform:translateY(340px)}}
+.wish{display:flex;gap:8px;max-width:460px;margin:auto}
+.wish input{flex:1;min-width:0;padding:12px 16px;border-radius:50px;border:0;font-size:1rem}
+.quote{font-size:1.2rem;line-height:1.7;min-height:5.5em;color:var(--soft);margin-top:16px}
+body.pre main{display:none}
+#intro{position:fixed;inset:0;z-index:45;display:none;flex-direction:column;align-items:center;justify-content:center;padding:20px;background:radial-gradient(circle at 50% 30%,#6b0540,#1a0010 75%);transition:opacity .9s;text-align:center}
+#ib{background:rgba(255,236,246,.96);color:#3a0020;border-radius:26px;padding:16px 22px;text-align:left;max-width:92vw;box-shadow:0 0 50px rgba(255,77,141,.55);transition:all .6s}
+.il{font-size:.98rem;line-height:1.38;font-weight:600;animation:pi .3s both}
+@keyframes pi{from{opacity:0;transform:translateX(-14px)}}
+#ibig{opacity:0;transform:scale(.4);transition:all .8s cubic-bezier(.2,1.4,.4,1)}
+#ibig.show{opacity:1;transform:scale(1)}
+#ibig h2{font-size:clamp(2rem,10vw,3.4rem);line-height:1.2;background:linear-gradient(90deg,#ffd1e3,#ff4d8d,#ffb347,#ff4d8d);background-size:300%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 4s linear infinite}
+#ibig .emo{font-size:2.6rem;margin-top:14px;animation:beat 1.1s infinite}
+.ask{position:relative;height:190px;display:flex;justify-content:center;align-items:flex-start}
+</style>
+</head>
+<body class="pre">
+<div id="stars"></div>
+<div id="rain"></div>
+<button id="music" title="Music">🎵</button>
+
+<div id="entry">
+  <div class="bigheart">💖</div>
+  <h1>Srabani, ye tumhare liye hai 🥰</h1>
+  <p>Mere dil ka darwaza sirf tumhare liye khulta hai 💌</p>
+  <button class="btn" id="open">Dil kholo 💝</button>
+</div>
+
+<div id="intro"><div id="ib"></div><div id="ibig"><h2>Srabani,<br>I Love You So Much</h2><div class="emo">😍🥰😘💞💕</div></div></div>
+
+<main>
+  <section class="hero">
+    <h2 id="typed"></h2>
+    <div class="emo">😍🥰😘💞💕</div>
+    <small>⬇ neeche scroll karo ⬇</small>
+  </section>
+
+  <section>
+    <h3>Love Meter 💘</h3>
+    <p class="sub">Button ko dabake rakho, dekho kitna pyaar hai 🥰</p>
+    <div class="bar"><i id="fill"></i></div>
+    <div id="pct" style="font-size:1.8rem;font-weight:700;margin-bottom:14px">0%</div>
+    <button class="btn" id="hold">Dabake rakho 💓</button>
+  </section>
+
+  <section>
+    <h3>Dil pakdo game 🎮</h3>
+    <p class="sub">Girte hue dilon pe tap karo, 12 pakdo! Score: <b id="score">0</b></p>
+    <div id="arena"></div>
+    <button class="btn" id="play" style="margin-top:14px">Start 💖</button>
+  </section>
+
+  <section>
+    <h3>Shayari for Srabani 📜</h3>
+    <button class="btn" id="shay">Ek shayari sunao 😍</button>
+    <div class="quote" id="quote"></div>
+  </section>
+
+  <section>
+    <h3>Taare ko wish batao 🌠</h3>
+    <p class="sub">Dil ki baat likho, taare tak pahunchegi ✨</p>
+    <div class="wish"><input id="wi" placeholder="Meri wish hai..."><button class="btn" id="ws">Bhejo 💌</button></div>
+    <div id="wa" style="margin-top:14px;min-height:2em;color:var(--soft)"></div>
+  </section>
+
+  <section>
+    <h3>Mujhe tumse pyaar kyun hai 🥹</h3>
+    <p class="sub">Card pe tap karo 👆</p>
+    <div class="grid" id="cards"></div>
+  </section>
+
+  <section>
+    <h3>Ek chhoti si chitthi 💌</h3>
+    <div class="letter" id="letter"></div>
+  </section>
+
+  <section>
+    <h3>Ek sawaal Srabani 🥺</h3>
+    <p class="sub">Sach sach batana...</p>
+    <div class="ask">
+      <button class="btn" id="yes">Haan, bahut zyada! 💖</button>
+      <button class="btn" id="no">Nahi 🙈</button>
+    </div>
+    <div id="ans"></div>
+  </section>
+
+  <section>
+    <button class="btn" id="surprise">Surprise dabao 🎁</button>
+    <p class="sign" style="margin-top:30px">Hamesha tumhara, <b>Adarsh</b> ❤️<br>I love you so much, Srabani 😘</p>
+  </section>
+</main>
+
+<script>
+const $=s=>document.querySelector(s);
+const EM=['❤️','💖','💕','😍','🥰','😘','💘','🌹','✨','💞','🦋'];
+function rain(){
+  const e=document.createElement('span');e.className='fl';
+  e.textContent=EM[Math.floor(Math.random()*EM.length)];
+  e.style.left=Math.random()*100+'vw';
+  e.style.fontSize=(16+Math.random()*26)+'px';
+  e.style.animationDuration=(6+Math.random()*7)+'s';
+  $('#rain').appendChild(e);setTimeout(()=>e.remove(),13000);
+}
+setInterval(rain,350);
+function burst(x,y,n=26){
+  for(let i=0;i<n;i++){
+    const p=document.createElement('span');p.className='pop';
+    p.textContent=EM[Math.floor(Math.random()*EM.length)];
+    p.style.left=x+'px';p.style.top=y+'px';p.style.fontSize=(18+Math.random()*22)+'px';
+    const a=Math.random()*6.28,d=80+Math.random()*180;
+    p.style.setProperty('--x',Math.cos(a)*d+'px');p.style.setProperty('--y',Math.sin(a)*d+'px');
+    document.body.appendChild(p);setTimeout(()=>p.remove(),1700);
+  }
+}
+function typeText(el,txt,speed,done){
+  let i=0;(function t(){el.textContent=txt.slice(0,i++);if(i<=txt.length)setTimeout(t,speed);else if(done)done();})();
+}
+$('#open').onclick=e=>{
+  burst(e.clientX,e.clientY,40);
+  $('#entry').classList.add('go');
+  setTimeout(()=>$('#entry').remove(),1000);
+  runIntro();
+};
+function runIntro(){
+  const it=$('#intro'),bx=$('#ib');it.style.display='flex';
+  const full='Srabani i love you so much';
+  const ems=['😉','🤎','😽','✨','😭','👉','♾️','🩷','🫠','💘','💕','✌️','🎀','🫶','💛','🌷','🙈','💟','✨','💋','😍','🥰','😘','💞','💖','💋'];
+  const ls=[];for(let i=1;i<=full.length;i++){const s=full.slice(0,i).trim();if(!ls.includes(s))ls.push(s)}
+  ls.forEach((s,i)=>setTimeout(()=>{const d=document.createElement('div');d.className='il';d.textContent=s+' '+ems[i%ems.length];bx.appendChild(d);if(i%5===4)burst(innerWidth*(.2+.6*Math.random()),innerHeight*.5,10)},500+i*240));
+  const end=500+ls.length*240;
+  setTimeout(()=>{bx.style.opacity=0;bx.style.transform='scale(.6)'},end+500);
+  setTimeout(()=>{bx.style.display='none';$('#ibig').classList.add('show');burst(innerWidth/2,innerHeight/2,70)},end+1150);
+  setTimeout(()=>{it.style.opacity=0;document.body.classList.remove('pre');scrollTo(0,0);place();typeText($('#typed'),'I Love You So Much Srabani ❤️',90);setTimeout(()=>it.remove(),950)},end+4000);
+}
+const reasons=[
+ ['😊','Teri smile meri poori duniya roshan kar deti hai'],
+ ['🤗','Tere saath har pal ghar jaisa lagta hai'],
+ ['🌙','Raat ko tera khayal hi neend le aata hai'],
+ ['😂','Tere saath hasna sabse pyaara hai'],
+ ['💪','Tu mujhe behtar insaan banati hai'],
+ ['🌹','Tu meri duniya ki sabse khoobsurat cheez hai']];
+reasons.forEach(r=>{
+  const d=document.createElement('div');d.className='flip';
+  d.innerHTML='<div><span class="f">'+r[0]+'</span><span class="b">'+r[1]+'</span></div>';
+  d.onclick=ev=>{d.classList.toggle('on');burst(ev.clientX,ev.clientY,8)};
+  $('#cards').appendChild(d);
+});
+const letter='Meri pyaari Srabani 💕\n\nTum meri zindagi ki sabse khoobsurat kahani ho. Jab bhi tumhe dekhta hoon, dil khud-ba-khud muskura deta hai 🥰\n\nMain wada karta hoon ki har mushkil mein tumhara haath thaame rakhunga, tumhe hamesha hasaunga, aur tumse roz naye tareeke se pyaar karunga 💍✨\n\nTum meri duniya ho, meri jaan ho, meri sabse badi khushi ho 😘\n\nI love you so much, Srabani ❤️';
+let started=false;
+new IntersectionObserver((en,o)=>{if(en[0].isIntersecting&&!started){started=true;typeText($('#letter'),letter,35)}}).observe($('#letter'));
+/* stars + shooting stars */
+for(let i=0;i<70;i++){const s=document.createElement('div');s.className='st';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*3+'s';$('#stars').appendChild(s)}
+setInterval(()=>{const s=document.createElement('div');s.className='shoot';s.style.left=(50+Math.random()*50)+'%';s.style.top=Math.random()*40+'%';$('#stars').appendChild(s);setTimeout(()=>s.remove(),1400)},4000);
+/* heart trail */
+let lt=0;
+addEventListener('pointermove',e=>{const n=Date.now();if(n-lt<70)return;lt=n;const t=document.createElement('span');t.className='trail';t.textContent=['💖','✨','💕'][Math.floor(Math.random()*3)];t.style.left=e.clientX+'px';t.style.top=e.clientY+'px';document.body.appendChild(t);setTimeout(()=>t.remove(),900)});
+/* music */
+let ac=null,mt=null,on=false;
+const notes=[261.6,329.6,392,523.3,392,329.6,293.7,349.2,440,587.3,440,349.2,246.9,293.7,392,493.9,392,293.7,261.6,329.6,392,659.3,523.3,392];
+let ni=0;
+function ping(){const o=ac.createOscillator(),g=ac.createGain();o.type='sine';o.frequency.value=notes[ni++%notes.length];g.gain.setValueAtTime(.0001,ac.currentTime);g.gain.exponentialRampToValueAtTime(.12,ac.currentTime+.05);g.gain.exponentialRampToValueAtTime(.0001,ac.currentTime+1.2);o.connect(g);g.connect(ac.destination);o.start();o.stop(ac.currentTime+1.3)}
+function music(v){on=v;$('#music').textContent=v?'🎵':'🔇';clearInterval(mt);if(v){try{ac=ac||new (window.AudioContext||window.webkitAudioContext)();ac.resume();ping();mt=setInterval(ping,550)}catch(e){}}}
+$('#music').onclick=()=>music(!on);
+$('#open').addEventListener('click',()=>music(true));
+/* love meter */
+let lv=0,hd=false,lm=null,done=false;
+function lmTick(){lv=Math.max(0,Math.min(100,lv+(hd?1.2:-1.5)));$('#fill').style.width=lv+'%';
+  if(lv>=100&&!done){done=true;$('#pct').textContent='∞% 😍 Meri jaan!';burst(innerWidth/2,innerHeight/2,70)}
+  else if(!done)$('#pct').textContent=Math.round(lv)+'%';
+  if(!hd&&lv<=0){clearInterval(lm);lm=null;done=false}}
+const hb=$('#hold');
+hb.addEventListener('pointerdown',e=>{e.preventDefault();hd=true;if(!lm)lm=setInterval(lmTick,30)});
+['pointerup','pointerleave','pointercancel'].forEach(ev=>hb.addEventListener(ev,()=>{hd=false}));
+/* catch hearts */
+let sc=0,gi=null;
+$('#play').onclick=()=>{sc=0;$('#score').textContent=0;$('#arena').innerHTML='';clearInterval(gi);$('#play').textContent='Dobara khelo 💖';
+  gi=setInterval(()=>{const h=document.createElement('span');h.className='fh';h.textContent=['💖','💗','💕','😍'][Math.floor(Math.random()*4)];
+    h.style.left=Math.random()*(($('#arena').clientWidth)-44)+'px';
+    h.addEventListener('pointerdown',ev=>{ev.preventDefault();h.remove();sc++;$('#score').textContent=sc;burst(ev.clientX,ev.clientY,6);
+      if(sc>=12){clearInterval(gi);$('#arena').innerHTML='<div style="padding:80px 16px;font-size:1.4rem">Jeet gayi meri jaan! 🏆<br>Tumne mera dil pakad liya 🥰💍</div>';burst(innerWidth/2,innerHeight/2,70)}});
+    $('#arena').appendChild(h);setTimeout(()=>h.remove(),3500)},650)};
+/* shayari */
+const sh=['Teri aankhon mein jo jaadu hai, wo kisi chaand mein nahi, tu meri jaan hai, kisi aur ke naam mein nahi 🌙','Tere bina adhoora hoon main, tu mil jaaye to poora hoon main 💞','Dil ki har dhadkan mein bas tera naam hai, Srabani tu hi meri subah, tu hi meri shaam hai 😍','Sitaron se poocha sabse haseen kaun, aasman bola Srabani, baaki sab mauun 🌟','Tu hai to har din Valentine, tu nahi to sab kuch fine bhi nahi 😘','Zindagi ke har safar mein bas tera saath chahiye, aur kuch nahi, bas tera haath chahiye 🤝'];
+let si=-1;
+$('#shay').onclick=()=>{let n;do{n=Math.floor(Math.random()*sh.length)}while(n===si);si=n;typeText($('#quote'),sh[n],35)};
+/* wish */
+$('#ws').onclick=e=>{const v=$('#wi').value.trim();if(!v)return;
+  const w=document.createElement('span');w.className='fl';w.style.cssText='left:'+(10+Math.random()*50)+'vw;font-size:20px;color:#ffd1e3;white-space:nowrap;animation-duration:7s;opacity:1';w.textContent='⭐ '+v+' ⭐';$('#rain').appendChild(w);setTimeout(()=>w.remove(),7500);
+  burst(e.clientX,e.clientY,30);$('#wi').value='';$('#wa').textContent='Taaron ne wish sun li, ab wo poori hogi 🌠💖'};
+const no=$('#no'),yes=$('#yes');
+function place(){no.style.left=($('.ask').clientWidth/2-no.offsetWidth/2)+'px';no.style.top='95px'}
+place();
+function dodge(){
+  const w=$('.ask').clientWidth-no.offsetWidth,h=$('.ask').clientHeight-no.offsetHeight;
+  no.style.left=Math.random()*w+'px';no.style.top=(75+Math.random()*Math.max(0,h-75))+'px';
+}
+no.addEventListener('mouseover',dodge);no.addEventListener('touchstart',e=>{e.preventDefault();dodge()});no.onclick=dodge;
+yes.onclick=e=>{
+  burst(e.clientX,e.clientY,60);
+  $('#ans').textContent='Mujhe pata tha! 🥰 Main bhi tumse bahut zyada pyaar karta hoon, meri jaan 💖😘';
+};
+$('#surprise').onclick=e=>{
+  for(let i=0;i<5;i++)setTimeout(()=>burst(innerWidth*Math.random(),innerHeight*(.2+.5*Math.random()),30),i*250);
+  $('#surprise').textContent='Tum meri ho, sirf meri 💘';
+};
+</script>
+</body>
+</html>
